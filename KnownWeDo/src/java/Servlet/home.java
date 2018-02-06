@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author JVVQX
  */
-public class index extends HttpServlet {
+public class home extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
