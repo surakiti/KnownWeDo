@@ -32,7 +32,7 @@ public class index extends HttpServlet {
             throws ServletException, IOException {
         String data = Word.getData();
         request.setAttribute("data", data);
-        getServletContext().getRequestDispatcher("....jsp").forward(request, response);
+        getServletContext().getRequestDispatcher("helloworld.jsp").forward(request, response);
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
