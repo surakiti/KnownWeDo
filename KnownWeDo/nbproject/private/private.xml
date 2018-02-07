@@ -3,11 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/D:/SPM/KnownWeDo/KnownWeDo/web/WEB-INF/glassfish-web.xml</file>
             <file>file:/D:/SPM/KnownWeDo/KnownWeDo/src/java/Model/ConnectionBuilder.java</file>
             <file>file:/D:/SPM/KnownWeDo/KnownWeDo/src/java/Servlet/Home.java</file>
             <file>file:/D:/SPM/KnownWeDo/KnownWeDo/src/java/Model/Word.java</file>
             <file>file:/D:/SPM/KnownWeDo/KnownWeDo/web/helloworld.jsp</file>
+=======
+            <file>file:/Users/ssurakiti/KownWeDo/KnownWeDo/web/helloworld.html</file>
+>>>>>>> parent of f03fcd2... 58130500101
         </group>
     </open-files>
 </project-private>
