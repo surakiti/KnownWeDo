@@ -6,6 +6,7 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+<link rel="stylesheet" href="Style.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 <!DOCTYPE html>
 <html>
@@ -14,8 +15,10 @@
     <title>INT206Software</title>
 </head>
 
-<body style="background-color:#3A3939">
-
+<body>
+<video autoplay muted loop id="myVideo">
+  <source src="polina.mp4" type="video/mp4">
+</video>
         
 <div style="padding-left:35%;margin-top:10%">
 <div class="row ">
