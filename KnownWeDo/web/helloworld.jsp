@@ -28,12 +28,10 @@
     <div class="col s12 m6">
         <div class="card">
             <div class="card-image">
-                <img src="images/hello_world.gif">
-           
-                
+                <img src="./images/hello_world.gif"
             </div>
             <div class="card-content">
-                <p style="text-align:center"><span style="color:palevioletred">HelloWorld :)</span><br>"Good times become good memories and bad times become good lessons."</p>
+                <p style="text-align:center"><span style="color:palevioletred">${message}</span><br>"Good times become good memories and bad times become good lessons."</p>
             </div>
         </div>
     </div>

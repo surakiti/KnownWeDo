@@ -21,14 +21,16 @@ public class Word {
         String str = "";
         Connection con = ConnectionBuilder.getConnection();
         try {
-            PreparedStatement ps = con.prepareStatement("SELECT * FORM database");
+            PreparedStatement ps = con.prepareStatement("SELECT * FROM Data");
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
-                str = rs.getString("");
+                str = rs.getString("Data");
             }
+        con.close();
         } catch (SQLException ex) {
             Logger.getLogger(Word.class.getName()).log(Level.SEVERE, null, ex);
         }
+        
         return str;
     }
 }

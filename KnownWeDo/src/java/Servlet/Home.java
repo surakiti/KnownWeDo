@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author JVVQX
  */
-public class index extends HttpServlet {
+public class Home extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -31,8 +31,8 @@ public class index extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String data = Word.getData();
-        request.setAttribute("data", data);
-        getServletContext().getRequestDispatcher("helloworld.jsp").forward(request, response);
+        request.setAttribute("message", data);
+        getServletContext().getRequestDispatcher("/helloworld.jsp").forward(request, response);
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
