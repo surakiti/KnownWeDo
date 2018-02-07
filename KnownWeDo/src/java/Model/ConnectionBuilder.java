@@ -17,10 +17,14 @@ import java.util.logging.Logger;
  */
 public class ConnectionBuilder {
     public static Connection getConnection() {
+        
         Connection con = null;
+        String url = "jdbc:mysql://159.65.1.55:3306/TEST";
+        String user = "DBADMIN";
+        String pass = "Password@8";
         try {
-            Class.forName("");
-            con = DriverManager.getConnection("url","user","pass");
+            Class.forName("com.mysql.jdbc.Driver");
+            con = DriverManager.getConnection(url,user,pass);
         } catch (SQLException ex) {
             Logger.getLogger(ConnectionBuilder.class.getName()).log(Level.SEVERE, null, ex);
         } catch (ClassNotFoundException ex) {
