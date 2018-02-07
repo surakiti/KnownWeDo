@@ -21,10 +21,10 @@ public class Word {
         String str = "";
         Connection con = ConnectionBuilder.getConnection();
         try {
-            PreparedStatement ps = con.prepareStatement("SELECT * FROM Data");
+            PreparedStatement ps = con.prepareStatement("SELECT * FORM database");
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
-                str = rs.getString("Data");
+                str = rs.getString("");
             }
         } catch (SQLException ex) {
             Logger.getLogger(Word.class.getName()).log(Level.SEVERE, null, ex);

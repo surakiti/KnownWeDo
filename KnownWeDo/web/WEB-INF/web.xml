@@ -5,17 +5,16 @@
         <servlet-class>Servlet.Servlet</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>Home</servlet-name>
-        <servlet-class>Servlet.Home</servlet-class>
-        <load-on-startup>1</load-on-startup>
+        <servlet-name>home</servlet-name>
+        <servlet-class>Servlet.home</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Servlet</servlet-name>
         <url-pattern>/Servlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>Home</servlet-name>
-        <url-pattern>/</url-pattern>
+        <servlet-name>home</servlet-name>
+        <url-pattern>/home</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
