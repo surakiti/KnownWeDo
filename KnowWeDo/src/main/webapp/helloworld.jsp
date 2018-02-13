@@ -16,9 +16,7 @@
 </head>
 
 <body>
-<video autoplay muted loop id="myVideo">
-  <source src="polina.mp4" type="video/mp4">
-</video>
+
         
 <div style="padding-left:35%;margin-top:10%">
 <div class="row ">
