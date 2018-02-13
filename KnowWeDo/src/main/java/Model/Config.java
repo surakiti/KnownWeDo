@@ -1,6 +1,7 @@
 
 package Model;
 
+import java.io.InputStream;
 import java.util.Properties;
  
 public class Config
@@ -10,8 +11,9 @@ public class Config
    {
 	configFile = new java.util.Properties();
 	try {
-	  configFile.load(this.getClass().getClassLoader().
-	  getResourceAsStream("/config.cfg"));
+          InputStream inStream = getClass().getClassLoader()
+                     .getResourceAsStream("config.properties");
+	  configFile.load(inStream);
 	}catch(Exception eta){
 	    eta.printStackTrace();
 	}

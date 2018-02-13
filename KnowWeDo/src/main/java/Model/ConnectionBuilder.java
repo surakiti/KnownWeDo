@@ -17,10 +17,11 @@ import java.util.logging.Logger;
  */
 public class ConnectionBuilder {
     public static Connection getConnection() {
+        Config cfg = new Config();
         Connection con = null;
-        String url = "jdbc:mysql://159.65.1.55:3306/TEST";
-        String user = "DBADMIN";
-        String pass = "Password@8";
+        String url = cfg.getProperty("url");
+        String user = cfg.getProperty("user");
+        String pass = cfg.getProperty("pass");
         try {
             Class.forName("com.mysql.jdbc.Driver");
             con = DriverManager.getConnection(url,user,pass);
@@ -31,4 +32,5 @@ public class ConnectionBuilder {
         }
         return con;
     }
+   
 }
