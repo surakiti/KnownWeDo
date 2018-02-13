@@ -10,7 +10,7 @@
 <html>
 
 <head>
-    <title>INT206Software</title>
+    <title>INT206 Software Project Management</title>
 </head>
 
 <body>
