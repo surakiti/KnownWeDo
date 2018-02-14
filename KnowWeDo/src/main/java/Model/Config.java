@@ -11,9 +11,9 @@ public class Config
    {
 	configFile = new java.util.Properties();
 	try {
-          InputStream inStream = getClass().getClassLoader()
+          InputStream inputStream = getClass().getClassLoader()
                      .getResourceAsStream("config.properties");
-	  configFile.load(inStream);
+	  configFile.load(inputStream);
 	}catch(Exception eta){
 	    eta.printStackTrace();
 	}

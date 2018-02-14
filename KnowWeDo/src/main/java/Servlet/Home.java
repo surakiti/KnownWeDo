@@ -29,7 +29,7 @@ public class Home extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String data = Word.getData();
+        String data = Word.getDataFromDatabase();
         request.setAttribute("message", data);
         getServletContext().getRequestDispatcher("/helloworld.jsp").forward(request, response);
     }

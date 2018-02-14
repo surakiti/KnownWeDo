@@ -17,21 +17,21 @@ import java.util.logging.Logger;
  * @author JVVQX
  */
 public class Word {
-    public static String getData(){
-        String str = "";
-        Connection con = ConnectionBuilder.getConnection();
+    public static String getDataFromDatabase(){
+        String data = "";
+        Connection connectDatabase = ConnectionBuilder.getConnection();
         try {
-            PreparedStatement ps = con.prepareStatement("SELECT * FROM Data");
-            ResultSet rs = ps.executeQuery();
-            while (rs.next()) {
-                str = rs.getString("Data");
+            PreparedStatement statementDatabase = connectDatabase.prepareStatement("SELECT * FROM Data");
+            ResultSet resultDatabase = statementDatabase.executeQuery();
+            while (resultDatabase.next()) {
+                data = resultDatabase.getString("Data");
             }
-        con.close();
+        connectDatabase.close();
         } catch (SQLException ex) {
             Logger.getLogger(Word.class.getName()).log(Level.SEVERE, null, ex);
         }
         
-        return str;
+        return data;
     }
     
    

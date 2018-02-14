@@ -17,20 +17,20 @@ import java.util.logging.Logger;
  */
 public class ConnectionBuilder {
     public static Connection getConnection() {
-        Config cfg = new Config();
-        Connection con = null;
-        String url = cfg.getProperty("url");
-        String user = cfg.getProperty("user");
-        String pass = cfg.getProperty("pass");
+        Config config = new Config();
+        Connection connectDatabase = null;
+        String url = config.getProperty("url");
+        String username = config.getProperty("user");
+        String password = config.getProperty("pass");
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection(url,user,pass);
+            connectDatabase = DriverManager.getConnection(url,username,password);
         } catch (SQLException ex) {
             Logger.getLogger(ConnectionBuilder.class.getName()).log(Level.SEVERE, null, ex);
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(ConnectionBuilder.class.getName()).log(Level.SEVERE, null, ex);
         }
-        return con;
+        return connectDatabase;
     }
    
 }
