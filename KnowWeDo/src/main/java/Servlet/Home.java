@@ -34,7 +34,7 @@ public class Home extends HttpServlet {
         ArrayList<Campaign> arrayCampaign =  Campaign.getTotalCampaign();
         String data = Word.getDataFromDatabase();
         request.setAttribute("message", data);
-        request.setAttribute("arrayCampaign",arrayCampaign)
+        request.setAttribute("arrayCampaign",arrayCampaign);
         getServletContext().getRequestDispatcher("/Maps.jsp").forward(request, response);
     }
 
