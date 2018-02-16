@@ -5,10 +5,12 @@
  */
 package Servlet;
 
+import Model.Address;
 import Model.Campaign;
 import Model.Word;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.LinkedHashSet;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -33,8 +35,10 @@ public class Home extends HttpServlet {
             throws ServletException, IOException {
         ArrayList<Campaign> arrayCampaign =  Campaign.getTotalCampaign();
         String data = Word.getDataFromDatabase();
+        LinkedHashSet<Address> linkAddress = Address.filterAddress(arrayCampaign);
         request.setAttribute("message", data);
         request.setAttribute("arrayCampaign",arrayCampaign);
+        request.setAttribute("linkFilterAddress",linkAddress);
         getServletContext().getRequestDispatcher("/Maps.jsp").forward(request, response);
     }
 
