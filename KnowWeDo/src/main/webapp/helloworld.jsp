@@ -5,39 +5,60 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-<link rel="stylesheet" href="style.css" type="text/css">
+
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">-->
+
+
 <!DOCTYPE html>
-<html>
 
+<html lang="en">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/style.css" type="text/css">
+   <link rel="stylesheet" href="CSS/materialize.min.css" type="text/css">
+   <link rel="stylesheet" href="CSS/materialize.css" type="text/css">
+   <link rel="stylesheet" href="CSS/stylefont.css" type="text/css">
 <head>
-    <title>INT206 Software Project Management</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Parallax Template - Materialize</title>
+
+  <!-- CSS  -->
+  
 </head>
-
 <body>
-
-   <div class="fullscreen-bg">
-    <video loop muted autoplay poster="asset/img/polina.jpg" class="fullscreen-bg__video">
-        <source src="asset/video/polina.mp4" type="video/mp4">
-    </video>
-    </div>     
-    <div style="padding-left:35%;margin-top:10%">
-    <div class="row ">
-    <div class="col s12 m6">
-        <div class="card">
-            <div class="card-image">
-                <img border="0" src="http://www.mx7.com/i/287/nVKoku.gif" />
-            </div>
-            <div class="card-content">
-                <p style="text-align:center"><span style="color:palevioletred">${message}</span><br>"Good times become good memories and bad times become good lessons."</p>
-            </div>
-        </div>
+  <nav  class="BGNav" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="colornav brand-logo" >Know We Do</a>
+      
+      <div class="RightNav">
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">CAMPAIGN</a></li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">COMBANY</a></li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">HOME</a></li>
+      </ul>
+      </div>
+      
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">CAMPAIGN</a></li>
+        
+      </ul>
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">COMPANY</a></li>        
+      </ul>
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">HOME</a></li>
+        
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
-</div>
-</div>
+  </nav>
 
+  
 
-
-</body>
-
+  </body>
 </html>
