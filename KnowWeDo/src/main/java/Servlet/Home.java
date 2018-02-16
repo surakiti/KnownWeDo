@@ -31,7 +31,7 @@ public class Home extends HttpServlet {
             throws ServletException, IOException {
         String data = Word.getDataFromDatabase();
         request.setAttribute("message", data);
-        getServletContext().getRequestDispatcher("/helloworld.jsp").forward(request, response);
+        getServletContext().getRequestDispatcher("/Maps.jsp").forward(request, response);
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
