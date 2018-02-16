@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /src/main/resources/config.properties
+=======
+/KnowWeDo/src/main/resources/config.properties
+>>>>>>> e2c8002bb6faa101ff5fd568e5aaa8f2c872a9a1
 
 
 # Created by https://www.gitignore.io/api/macos,windows,netbeans
@@ -63,3 +67,7 @@ $RECYCLE.BIN/
 
 
 # End of https://www.gitignore.io/api/macos,windows,netbeans
+<<<<<<< HEAD
+=======
+/KnowWeDo/target/
+>>>>>>> e2c8002bb6faa101ff5fd568e5aaa8f2c872a9a1
