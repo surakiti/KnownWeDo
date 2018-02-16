@@ -5,8 +5,10 @@
  */
 package Servlet;
 
+import Model.Campaign;
 import Model.Word;
 import java.io.IOException;
+import java.util.ArrayList;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -29,8 +31,10 @@ public class Home extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        ArrayList<Campaign> arrayCampaign =  Campaign.getTotalCampaign();
         String data = Word.getDataFromDatabase();
         request.setAttribute("message", data);
+        request.setAttribute("arrayCampaign",arrayCampaign);
         getServletContext().getRequestDispatcher("/Maps.jsp").forward(request, response);
     }
 
