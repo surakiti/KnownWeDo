@@ -150,13 +150,13 @@ public class Campaign {
         Connection connectDatabase = ConnectionBuilder.getConnection();
         ArrayList<Campaign> totalCampaigns = new ArrayList<>();
         try {
-            PreparedStatement statementDatabase = connectDatabase.prepareStatement("SELECT * FROM Campaign c JOIN ADDRESS a ON c.addressid = a.addressid");
+            PreparedStatement statementDatabase = connectDatabase.prepareStatement("SELECT * FROM Campaign c JOIN Address a ON c.AddressID = a.AddressID");
             ResultSet resultDatabase = statementDatabase.executeQuery();
             while (resultDatabase.next()) {
                 Campaign campaign = new Campaign();
-                Address addressCampaign = new Address(resultDatabase.getString("province"),resultDatabase.getString("amphur"));
-                campaign.setCampaignId(resultDatabase.getLong("campaignid"));
-                campaign.setCampaignName(resultDatabase.getString("campaignname"));
+                Address addressCampaign = new Address(resultDatabase.getString("Province"),resultDatabase.getString("Amphur"));
+                campaign.setCampaignId(resultDatabase.getLong("CampaignID"));
+                campaign.setCampaignName(resultDatabase.getString("CampaignName"));
                 campaign.setCampaignAddress(addressCampaign);
                 totalCampaigns.add(campaign);
             }
