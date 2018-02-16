@@ -5,6 +5,9 @@
  */
 package Model;
 
+import java.util.ArrayList;
+import java.util.LinkedHashSet;
+
 /**
  *
  * @author JVVQX
@@ -37,5 +40,11 @@ public class Address {
         this.amphur = amphur;
     }
     
-    
+    public static LinkedHashSet<Address> filterAddress(ArrayList<Campaign> campaign){
+        LinkedHashSet<Address> totalAddress = new LinkedHashSet<>();
+        for(Campaign camp:campaign){
+            totalAddress.add(camp.getCampaignAddress());
+        }
+        return totalAddress;
+    }
 }
