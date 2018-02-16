@@ -27,7 +27,7 @@ public class Campaign {
     private String company;
     private Address campaignAddress;
     private double budget;
-    private ArrayList<Donation> donation;
+//    private ArrayList<Donation> donation;
     private String detail;
     private String status;
     private ArrayList<String> image;
@@ -35,7 +35,7 @@ public class Campaign {
     public Campaign() {
     }
 
-    public Campaign(long campaignId, String campaignName, Date startDate, Date endDate, String type, String company, Address campaignAddress, double budget, ArrayList<Donation> donation, String detail, String status, ArrayList<String> image) {
+    public Campaign(long campaignId, String campaignName, Date startDate, Date endDate, String type, String company, Address campaignAddress, double budget, /*ArrayList<Donation> donation,*/ String detail, String status, ArrayList<String> image) {
         this.campaignId = campaignId;
         this.campaignName = campaignName;
         this.startDate = startDate;
@@ -44,7 +44,7 @@ public class Campaign {
         this.company = company;
         this.campaignAddress = campaignAddress;
         this.budget = budget;
-        this.donation = donation;
+//        this.donation = donation;
         this.detail = detail;
         this.status = status;
         this.image = image;
@@ -114,13 +114,13 @@ public class Campaign {
         this.budget = budget;
     }
 
-    public ArrayList<Donation> getDonation() {
-        return donation;
-    }
-
-    public void setDonation(ArrayList<Donation> donation) {
-        this.donation = donation;
-    }
+//    public ArrayList<Donation> getDonation() {
+//        return donation;
+//    }
+//
+//    public void setDonation(ArrayList<Donation> donation) {
+//        this.donation = donation;
+//    }
 
     public String getDetail() {
         return detail;
