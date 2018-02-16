@@ -5,8 +5,14 @@
  */
 package Model;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -140,5 +146,24 @@ public class Campaign {
         this.image = image;
     }
     
-    
+    public static ArrayList<Campaign> getTotalCampaign(){
+        Connection connectDatabase = ConnectionBuilder.getConnection();
+        ArrayList<Campaign> totalCampaigns = new ArrayList<>();
+        try {
+            PreparedStatement statementDatabase = connectDatabase.prepareStatement("SELECT * FROM Campaign c JOIN ADDRESS a ON c.addressid = a.addressid");
+            ResultSet resultDatabase = statementDatabase.executeQuery();
+            while (resultDatabase.next()) {
+                Campaign campaign = new Campaign();
+                Address addressCampaign = new Address(resultDatabase.getString("province"),resultDatabase.getString("amphur"));
+                campaign.setCampaignId(resultDatabase.getLong("campaignid"));
+                campaign.setCampaignName(resultDatabase.getString("campaignname"));
+                campaign.setCampaignAddress(addressCampaign);
+                totalCampaigns.add(campaign);
+            }
+        connectDatabase.close();
+        } catch (SQLException ex) {
+            Logger.getLogger(Word.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return totalCampaigns;
+    }
 }
