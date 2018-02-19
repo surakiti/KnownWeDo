@@ -154,7 +154,7 @@ public class Campaign {
             ResultSet resultDatabase = statementDatabase.executeQuery();
             while (resultDatabase.next()) {
                 Campaign campaign = new Campaign();
-                Address addressCampaign = new Address(resultDatabase.getString("Province"),resultDatabase.getString("Amphur"));
+                Address addressCampaign = new Address(resultDatabase.getString("Province"),resultDatabase.getString("Amphur"),resultDatabase.getInt("ZipCode"));
                 campaign.setCampaignId(resultDatabase.getLong("CampaignID"));
                 campaign.setCampaignName(resultDatabase.getString("CampaignName"));
                 campaign.setCampaignAddress(addressCampaign);

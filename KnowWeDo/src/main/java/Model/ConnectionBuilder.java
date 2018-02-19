@@ -32,5 +32,9 @@ public class ConnectionBuilder {
         }
         return connectDatabase;
     }
-   
+    public static void main(String[] args) {
+        
+        System.out.println(ConnectionBuilder.getConnection());
+    }
 }
+ 
