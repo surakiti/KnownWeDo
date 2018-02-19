@@ -71,7 +71,7 @@
                 mmmap = new MMMap(mmMapDiv, 13.7648787,100.5380879, 3, "normal");
                 mmmap.setSize(800,895);
                 mmmap.rePaint();
-                mmmap.showObject('__', "IG",true); 
+                mmmap.showObject('__', "IG",true,null,null,"4d4d4d", "4d4d4d",0.7,0.5); 
             }
 
         </script>
