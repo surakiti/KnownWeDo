@@ -85,7 +85,7 @@
     <div class="section">
 
       
-      <div class="row">
+        <div class="row" style="background-color:#26A69A">
         
           
           <script
@@ -105,9 +105,9 @@
             }
 
         </script>
-         
+        <div style="margin-left:-19.5%;margin-top:-1.5%;">
         <div id="mmMapDiv"></div>
-   
+        </div>
           
           
       </div>
@@ -134,14 +134,14 @@
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h4>WHAT WE DO</h4>
           <p class="left-align light">We are a website which is central to the corporate 
-social responsibility of the leading companies and 
-organizations in Thailand. By the way, we have the 
-goal to promote and help companies or organizations
-have seen the areas not been saved. That makes 
-people get help to thoroughly. We see the suffering of
- people in the country. So we established a website to
-help people in country. To have a good quality of 
-life and sustainability.</p>
+                    social responsibility of the leading companies and 
+                    organizations in Thailand. By the way, we have the 
+                    goal to promote and help companies or organizations
+                    have seen the areas not been saved. That makes 
+                    people get help to thoroughly. We see the suffering of
+                    people in the country. So we established a website to
+                    help people in country. To have a good quality of 
+                    life and sustainability.</p>
         </div>
       </div>
 
@@ -188,7 +188,39 @@ life and sustainability.</p>
     <div class="parallax"><img src="bg3.jpg" alt="Unsplashed background img 3"></div>
   </div>
 
-  
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Know We DO </h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          
+         
+        </div>
+          
+        <div class="col l3 s12" >
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!"><img style=" width:20px;height:20px;margin-bottom:-1.8%" src="/logofootter/fb.png"> Facebook</a></li>
+            <li><a class="white-text" href="#!"><img style=" width:20px;height:20px;margin-bottom:-1.8%" src="/logofootter/tt.png"> Twitter</a></li>
+            <li><a class="white-text" href="#!"><img style=" width:20px;height:20px;margin-bottom:-1.8%" src="/logofootter/ig.png"> Instagram</a></li>
+            <li><a class="white-text" href="#!"><img style=" width:20px;height:20px;margin-bottom:-1.8%" src="/logofootter/tg.png"> Telegram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+          <span style="text-align:cen">Know We Do Company Copyright @2018</span>
+      </div>
+    </div>
+  </footer>
+
+
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
