@@ -30,7 +30,7 @@
   <!-- CSS  -->
   
 </head>
-<body onload="initialize()">
+<body onload="initialize()" >
   <nav  class="BGNav" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="colornav brand-logo" >Know We Do</a>
@@ -81,11 +81,10 @@
   </div>
 
 
-  <div class="container">
-    <div class="section">
+    
 
       
-        <div class="row" style="background-color:#26A69A">
+       
         
           
           <script
@@ -99,7 +98,7 @@
             function initialize(){
                 var mmMapDiv = document.getElementById("mmMapDiv");
                 mmmap = new MMMap(mmMapDiv, 13.7648787,100.5380879, 3, "normal");
-                mmmap.setSize(800,800);
+                mmmap.setSize(700,700);
                 mmmap.rePaint();
                 mmmap.showObject('__', "IG",true,null,null,"4d4d4d", "4d4d4d",0.7,0.5); 
                 mmmap.hideZoomBar();
@@ -107,16 +106,14 @@
             }
 
         </script>
-        <div style="margin-left:-19.5%;margin-top:-1.5%;">
-        <div id="mmMapDiv"></div>
+        <div style="margin-left:-19.5%;margin-top:0%;">
+        <div style="margin-left:16.4%;" id="mmMapDiv"></div>
         </div>
           
           
-      </div>
+      
 
-    </div>
-  </div>
-
+  
 
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
@@ -207,7 +204,7 @@
         <div class="col l3 s12" >
           <h5 class="white-text">Connect</h5>
           <ul>
-            <li><a class="white-text" href="#!"><img style=" width:20px;height:20px;margin-bottom:-1.8%" src="/logofootter/fb.png"> Facebook</a></li>
+            <li><a class="white-text" href="#!"><img style=" width:26px;height:26px;margin-bottom:-1.8%" src="/logofootter/fb.png"> Facebook</a></li>
             <li><a class="white-text" href="#!"><img style=" width:20px;height:20px;margin-bottom:-1.8%" src="/logofootter/tt.png"> Twitter</a></li>
             <li><a class="white-text" href="#!"><img style=" width:20px;height:20px;margin-bottom:-1.8%" src="/logofootter/ig.png"> Instagram</a></li>
             <li><a class="white-text" href="#!"><img style=" width:20px;height:20px;margin-bottom:-1.8%" src="/logofootter/tg.png"> Telegram</a></li>
