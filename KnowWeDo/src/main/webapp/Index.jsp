@@ -21,12 +21,13 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  
   <title>Parallax Template - Materialize</title>
 
   <!-- CSS  -->
   
 </head>
-<body>
+<body onload="initialize()">
   <nav  class="BGNav" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="colornav brand-logo" >Know We Do</a>
@@ -36,7 +37,7 @@
         <li><a href="#">CAMPAIGN</a></li>
       </ul>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">COMBANY</a></li>
+        <li><a href="#">COMPANY</a></li>
       </ul>
       <ul class="right hide-on-med-and-down">
         <li><a href="#">HOME</a></li>
@@ -57,8 +58,26 @@
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
+      <script
+            type="text/javascript"
+            src="http://mmmap15.longdo.com/mmmap/mmmap.php?key=18b1fbbda1f980b4e368c631a3d317ea">
+        </script>
+        <script type="text/javascript">
 
-  
+            var mmmap;
+
+            function initialize(){
+                var mmMapDiv = document.getElementById("mmMapDiv");
+                mmmap = new MMMap(mmMapDiv, 13.7648787,100.5380879, 3, "normal");
+                mmmap.setSize(800,895);
+                mmmap.rePaint();
+                mmmap.showObject('__', "IG",true); 
+            }
+
+        </script>
+         
+        <div id="mmMapDiv"></div>
+ 
 
   </body>
 </html>
