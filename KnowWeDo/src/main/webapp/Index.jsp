@@ -24,10 +24,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Know We Do</title>
 
+  
+  <title>Parallax Template - Materialize</title>
+
   <!-- CSS  -->
   
 </head>
-<body>
+<body onload="initialize()">
   <nav  class="BGNav" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="colornav brand-logo" >Know We Do</a>
@@ -37,7 +40,7 @@
         <li><a href="#">CAMPAIGN</a></li>
       </ul>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">COMBANY</a></li>
+        <li><a href="#">COMPANY</a></li>
       </ul>
       <ul class="right hide-on-med-and-down">
         <li><a href="#">HOME</a></li>
@@ -59,7 +62,137 @@
     </div>
   </nav>
 
+        <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">Volunteer</h1>
+        <div class="row center">
+          <h5 class="header col s12 light"></h5>
+        </div>
+        <div class="row center">
+          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="bg1.1.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      
+      <div class="row">
+        
+          
+          <script
+            type="text/javascript"
+            src="http://mmmap15.longdo.com/mmmap/mmmap.php?key=18b1fbbda1f980b4e368c631a3d317ea">
+        </script>
+        <script type="text/javascript">
+
+            var mmmap;
+
+            function initialize(){
+                var mmMapDiv = document.getElementById("mmMapDiv");
+                mmmap = new MMMap(mmMapDiv, 13.7648787,100.5380879, 3, "normal");
+                mmmap.setSize(800,800);
+                mmmap.rePaint();
+                mmmap.showObject('__', "IG",true,null,null,"4d4d4d", "4d4d4d",0.7,0.5); 
+            }
+
+        </script>
+         
+        <div id="mmMapDiv"></div>
+   
+          
+          
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="bg2.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>WHAT WE DO</h4>
+          <p class="left-align light">We are a website which is central to the corporate 
+social responsibility of the leading companies and 
+organizations in Thailand. By the way, we have the 
+goal to promote and help companies or organizations
+have seen the areas not been saved. That makes 
+people get help to thoroughly. We see the suffering of
+ people in the country. So we established a website to
+help people in country. To have a good quality of 
+life and sustainability.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+ <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><img style=" width:150px;height: 150px;" src="ph1.jpg" ></h2>
+            <h5 class="center">Volunteer</h5>
+
+            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><img style=" width:150px;height: 150px;" src="ph2.jpg" ></h2>
+            <h5 class="center">Donation</h5>
+
+            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+              <h2 class="center brown-text"><img style=" width:150px;height: 150px;" src="ph3.jpg" ></h2>
+            <h5 class="center">Charity</h5>
+
+            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+          </div>
+        </div>
+      </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="bg3.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
   
 
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="JS/materialize.js"></script>
+  <script src="JS/init.js"></script>
   </body>
 </html>
