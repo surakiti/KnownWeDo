@@ -4,6 +4,8 @@
     Author     : ssurakiti
 --%>
 
+<%@page import="java.util.LinkedHashSet"%>
+<%@page import="Model.Address"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">-->
@@ -95,6 +97,14 @@
 
             var mmmap;
 
+            <%
+                LinkedHashSet<Address> linkFilterAddress = (LinkedHashSet<Address>)request.getAttribute("linkFilterAddress");
+                boolean[] linkAddress = new boolean[87];
+                for(Address address:linkFilterAddress){
+                    linkAddress[address.getZipCode()/100-10] = true;
+                }
+            %>
+            
             function initialize(){
                 var mmMapDiv = document.getElementById("mmMapDiv");
                 mmmap = new MMMap(mmMapDiv, 13.7648787,100.5380879, 3, "normal");
@@ -103,13 +113,16 @@
                 mmmap.hideZoomBar();
                 mmmap.hideVerticalZoomBar();
                 <%
-                    for(int i = 11; i <= 96 ; i++){
+                    for(int i = 0 ; i < linkAddress.length ; i++){
+                        if(linkAddress[i]){
                 %>
-                    mmmap.showObject('<%=i%>', "IG",false,null,null,"4d4d4d", "4d4d4d",0.7,0.5);  
-                <%        
+                            mmmap.showObject('<%=i+10%>', "IG",true,null,null,"FF8000", "FF8000",0.7,0.5);
+                <%      }else{
+                %>            
+                            mmmap.showObject('<%=i+10%>', "IG",true,null,null,"4d4d4d", "4d4d4d",0.7,0.5);
+                <%      }
                     }
                 %>
-                mmmap.showObject('10', "IG",false,null,null,"FF8000", "FF8000",0.7,0.5); 
             }
 
         </script>
