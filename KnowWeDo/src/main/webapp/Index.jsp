@@ -126,9 +126,38 @@
             }
 
         </script>
-        <div style="margin-left:-19.5%;margin-top:0%;">
-        <div style="margin-left:16.4%;" id="mmMapDiv"></div>
+            <div id="mmMapDiv">
         </div>
+        <div class="searchCampaign">
+            <h2>Search campaign</h2><br><br>
+            <form action="">
+                Campaign Name : <input type="text" name="campaignName"><br>
+                Campaign Type:  
+                <select>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">Natural</option>
+                    <option value="2">Volunteer</option>
+                    <option value="3">Charity</option>
+                </select><br>
+                Province:
+                <select>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select><br>
+                Amphur:
+                <select>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select><br><br>
+                <button type="submit" id="search-button" class="btn-large waves-effect waves-light teal lighten-1" >Search</button>
+            </form>
+        </div>
+
+      
           
           
       
