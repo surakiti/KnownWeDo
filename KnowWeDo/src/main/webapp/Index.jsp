@@ -4,6 +4,8 @@
     Author     : ssurakiti
 --%>
 
+<%@page import="java.util.ArrayList"%>
+<%@page import="Model.Campaign"%>
 <%@page import="java.util.LinkedHashSet"%>
 <%@page import="Model.Address"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -99,6 +101,7 @@
 
             <%
                 LinkedHashSet<Address> linkFilterAddress = (LinkedHashSet<Address>) request.getAttribute("linkFilterAddress");
+                ArrayList<Campaign> arrayCampaign = (ArrayList<Campaign>)request.getAttribute("arrayCampaign");
                 boolean[] linkAddress = new boolean[87];
                 for (Address address : linkFilterAddress) {
                     linkAddress[address.getZipCode() / 100 - 10] = true;
@@ -190,6 +193,8 @@
                 </select><br><br>
                 <button type="submit" id="search-button" class="btn-large waves-effect waves-light teal lighten-1" >Search</button>
             </form>
+            <h2>Total campaign</h2><br><br>
+            <h2><%=arrayCampaign.size()%></h2>
         </div>
 
 
