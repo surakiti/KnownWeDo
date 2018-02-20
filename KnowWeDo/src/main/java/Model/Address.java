@@ -15,15 +15,15 @@ import java.util.LinkedHashSet;
 public class Address {
     private String province;
     private String amphur;
-    private int zipCode;
+    private int geocode;
 
     public Address() {
     }
 
-    public Address(String province, String amphur, int zipCode) {
+    public Address(String province, String amphur, int geocode) {
         this.province = province;
         this.amphur = amphur;
-        this.zipCode = zipCode;
+        this.geocode = geocode;
     }
 
     public String getProvince() {
@@ -42,12 +42,12 @@ public class Address {
         this.amphur = amphur;
     }
 
-    public int getZipCode() {
-        return zipCode;
+    public int getGeocode() {
+        return geocode;
     }
 
-    public void setZipCode(int zipCode) {
-        this.zipCode = zipCode;
+    public void setGeocode(int geocode) {
+        this.geocode = geocode;
     }
     
     public static LinkedHashSet<Address> filterAddress(ArrayList<Campaign> campaign){

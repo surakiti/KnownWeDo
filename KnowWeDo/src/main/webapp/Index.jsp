@@ -104,7 +104,7 @@
                 ArrayList<Campaign> arrayCampaign = (ArrayList<Campaign>)request.getAttribute("arrayCampaign");
                 boolean[] linkAddress = new boolean[87];
                 for (Address address : linkFilterAddress) {
-                    linkAddress[address.getZipCode() / 100 - 10] = true;
+                    linkAddress[address.getGeocode() / 100 - 10] = true;
                 }
             %>
 
@@ -143,10 +143,9 @@
                 for (int i = 0; i < linkFilterAddress.size(); i++) {
             %>
                 console.log(Math.trunc(address.geocode / 10000));
-                console.log(<%=((Address) linkFilterAddress.toArray()[i]).getZipCode() / 100%>);
-                if (Math.trunc(address.geocode / 10000) == <%=((Address) linkFilterAddress.toArray()[i]).getZipCode() / 100%>) {
+                console.log(<%=((Address) linkFilterAddress.toArray()[i]).getGeocode() / 100%>);
+                if (Math.trunc(address.geocode / 10000) == <%=((Address) linkFilterAddress.toArray()[i]).getGeocode() / 100%>) {
                     mmmap = new MMMap(mmMapDiv, 13.7648787, 100.5380879, 3, "normal");
-                    mmmap.showObject(Math.trunc(address.geocode / 10000) + '__', "IG", false, null, null, "4d4d4d", "4d4d4d", 0.7, 0.5);
                     mmmap.setSize(700, 700);
                     mmmap.rePaint();
                     mmmap.hideZoomBar();
@@ -155,9 +154,23 @@
                     mmmap.hideScale();
                     mmmap.hideModeSelector();
                     mmMapDiv.removeEventListener('click',onclick);
-
+                    <%
+                        for(int j = 1001;j<=1050;j++){
+                            if( ( (Address) linkFilterAddress.toArray()[i]).getGeocode() == j){
+                    %>
+                        mmmap.showObject('<%=j%>', "IG", false, null, null, "FF8000", "FF8000", 0.7, 0.5);        
+                    <%
+                            }else{
+                    %>
+                        mmmap.showObject('<%=j%>', "IG", false, null, null, "4d4d4d", "4d4d4d", 0.7, 0.5);
+                    <%       
+                            }
+                        }
+                    %>
+                
                 }
-            <%    }
+            <%    
+                }
             %>
             }
 
