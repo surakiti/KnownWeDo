@@ -1,9 +1,8 @@
-33<%-- 
-    Document   : helloworld
-    Created on : 6 ก.พ. 2561, 19:06:25
-    Author     : ssurakiti
+<%-- 
+    Document   : CompanyDeteal
+    Created on : Feb 21, 2018, 8:54:24 PM
+    Author     : jirayupeach
 --%>
-
 <%@page import="java.util.ArrayList"%>
 <%@page import="Model.Campaign"%>
 <%@page import="java.util.LinkedHashSet"%>
@@ -44,7 +43,7 @@
                         <li><a href="#">CAMPAIGN</a></li>
                     </ul>
                     <ul class="right hide-on-med-and-down">
-                        <li><a href="CompanyDetails.jsp">COMPANY</a></li>
+                        <li><a href="#">COMPANY</a></li>
                     </ul>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="#">HOME</a></li>
@@ -193,7 +192,6 @@
                     </div>
                 </div>
             </div>
-            
             <div class="parallax"><img src="bg2.jpg" alt="Unsplashed background img 2"></div>
         </div>
 
@@ -247,7 +245,7 @@
             </div>
         </div>
 
-        
+
         <div class="parallax-container valign-wrapper">
             <div class="section no-pad-bot">
                 <div class="container">
@@ -299,3 +297,5 @@
         <script src="JS/init.js"></script>
     </body>
 </html>
+
+
