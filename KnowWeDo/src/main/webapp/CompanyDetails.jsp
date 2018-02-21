@@ -40,25 +40,25 @@
 
                 <div class="RightNav">
                     <ul class="right hide-on-med-and-down">
-                        <li><a href="#">CAMPAIGN</a></li>
+                        <li><a href="/">CAMPAIGN</a></li>
                     </ul>
                     <ul class="right hide-on-med-and-down">
-                        <li><a href="#">COMPANY</a></li>
+                        <li><a href="company.jsp">COMPANY</a></li>
                     </ul>
                     <ul class="right hide-on-med-and-down">
-                        <li><a href="#">HOME</a></li>
+                        <li><a href="/">HOME</a></li>
                     </ul>
                 </div>
 
                 <ul id="nav-mobile" class="side-nav">
-                    <li><a href="#">CAMPAIGN</a></li>
+                    <li><a href="/">CAMPAIGN</a></li>
 
                 </ul>
                 <ul id="nav-mobile" class="side-nav">
-                    <li><a href="#">COMPANY</a></li>        
+                    <li><a href="company.jsp">COMPANY</a></li>        
                 </ul>
                 <ul id="nav-mobile" class="side-nav">
-                    <li><a href="#">HOME</a></li>
+                    <li><a href="/">HOME</a></li>
 
                 </ul>
                 <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -74,7 +74,7 @@
                         <h5 class="header col s12 light"></h5>
                     </div>
                     <div class="row center">
-                        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+                        <a href="company.jsp" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
                     </div>
                     <br><br>
 
