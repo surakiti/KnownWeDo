@@ -25,7 +25,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <title>Know We Do</title>
+        <title>Known We Do</title>
 
 
         <title>Parallax Template - Materialize</title>
@@ -36,7 +36,7 @@
     <body onload="initialize()" >
         <nav  class="BGNav" role="navigation">
             <div class="nav-wrapper container">
-                <a id="logo-container" href="#" class="colornav brand-logo" >Know We Do</a>
+                <a id="logo-container" href="#" class="colornav brand-logo" >Known We Do</a>
 
                 <div class="RightNav">
                     <ul class="right hide-on-med-and-down">
@@ -176,8 +176,12 @@
             <div style="margin-left:16.4%;" id="mmMapDiv"></div>
         </div>
         <div class="totalCampaign">
-            <h2>Total campaign</h2><br><br>
-            <h2><%=arrayCampaign.size()%></h2>
+            <div class="showTotalCampaignHeader">
+                <h2>Total campaign</h2>
+            </div><br><br>
+            <div class="showTotalCampaign">
+                <h3 style="text-align: center"><%=arrayCampaign.size()%> Campaigns</h3>
+            </div>
         </div>
 
 
@@ -261,7 +265,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col l6 s12">
-                        <h5 class="white-text">Know We DO </h5>
+                        <h5 class="white-text">Known We DO </h5>
                         <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
 
 
@@ -272,7 +276,7 @@
                     </div>
 
                     <div class="col l3 s12" >
-                        <h5 class="white-text">Connect</h5>
+                        <h5 class="white-text">Contact us</h5>
                         <ul>
                             <li><a class="white-text" href="#!"><img style=" width:26px;height:26px;margin-bottom:-1.8%" src="/logofootter/fb.png"> Facebook</a></li>
                             <li><a class="white-text" href="#!"><img style=" width:20px;height:20px;margin-bottom:-1.8%" src="/logofootter/tt.png"> Twitter</a></li>
@@ -284,7 +288,7 @@
             </div>
             <div class="footer-copyright">
                 <div class="container">
-                    <span style="text-align:cen">Know We Do Company Copyright @2018</span>
+                    <span style="text-align:cen">Known We Do Company Copyright @2018</span>
                 </div>
             </div>
         </footer>

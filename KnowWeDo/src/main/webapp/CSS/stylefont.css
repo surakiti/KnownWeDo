@@ -22,12 +22,12 @@ and open the template in the editor.
 .totalCampaign{
     float: left;
     width: 35%;
-    height: 100%;
-    margin-left: 4%;
-    margin-top: 2%;
+    height: auto;
+    margin-left: 6%;
+    margin-top: 15%;
     margin-right: 2%;
+    margin-bottom:5% ;
     display: inline-block;
-    
     
 }
 #mmMapDiv{
@@ -44,3 +44,20 @@ h2{
 .parallax-container{
     clear: both;
 }
+.showTotalCampaignHeader{
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 20px; 
+    color: white;
+    background-color: #26A69A;
+    border-color: black;
+}
+.showTotalCampaign{
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 20px;
+    color: white;
+    background-color: #26A69A;
+    border-color: black;
+}
+

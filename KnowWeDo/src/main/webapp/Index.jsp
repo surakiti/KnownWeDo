@@ -1,4 +1,4 @@
-33<%-- 
+<%-- 
     Document   : helloworld
     Created on : 6 ก.พ. 2561, 19:06:25
     Author     : ssurakiti
@@ -152,17 +152,17 @@
                     mmmap.hideModeSelector();
                     mmMapDiv.removeEventListener('click', onclick);
             <%
-                        for (int j = 1001; j <= 1050; j++) {
-                            if (((Address) linkFilterAddress.toArray()[i]).getGeocode() == j) {
+                for (int j = 1001; j <= 1050; j++) {
+                    if (((Address) linkFilterAddress.toArray()[i]).getGeocode() == j) {
             %>
                     mmmap.showObject('<%=j%>', "IG", false, null, null, "FF8000", "FF8000", 0.7, 0.5);
             <%
-                    } else {
+            } else {
             %>
                     mmmap.showObject('<%=j%>', "IG", false, null, null, "4d4d4d", "4d4d4d", 0.7, 0.5);
             <%
-                            }
-                        }
+                    }
+                }
             %>
 
                 }
@@ -177,9 +177,14 @@
             <div style="margin-left:16.4%;" id="mmMapDiv"></div>
         </div>
         <div class="totalCampaign">
-            <h2>Total campaign</h2><br><br>
-            <h2><%=arrayCampaign.size()%></h2>
+            <div class="showTotalCampaignHeader">
+                <h2>Total campaign</h2>
+            </div><br><br>
+            <div class="showTotalCampaign">
+                <h3 style="text-align: center"><%=arrayCampaign.size()%> Campaigns</h3>
+            </div>
         </div>
+
 
 
 
