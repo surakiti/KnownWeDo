@@ -35,17 +35,18 @@ public class HomeCompany extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            String companyName = request.getParameter("C");
+            String companyName = (String)request.getParameter("C");
+            System.out.println(companyName);
             if(companyName != null){
                 ArrayList companyCampaign = Campaign.getTotalCompanyCampaign(companyName);
                 LinkedHashSet<Address> linkAddress = Address.filterAddress(companyCampaign);
-                request.setAttribute("CompanyCampaignArray", companyCampaign.toArray());
+                request.setAttribute("CompanyCampaignArray", companyCampaign);
                 request.setAttribute("linkFilterAddress",linkAddress);
-                getServletContext().getRequestDispatcher("/CompanyDetails.jsp").forward(request, response);
+                
             }else{
-                getServletContext().getRequestDispatcher("/Home");
+                getServletContext().getRequestDispatcher("").forward(request, response);
             }
-            
+                 getServletContext().getRequestDispatcher("/CompanyDetails.jsp").forward(request, response);
         }
     }
 

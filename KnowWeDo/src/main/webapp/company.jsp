@@ -64,7 +64,7 @@
         <table border="10" solid ; " >
             <tr>
                 
-                    <th><input type="image" name="C" value="Kmutt"  style="border-radius:50%;height:200px;width:200px;border: 8px solid #26A69A; display:block; margin: 0 auto" src="http://www.pr.kmutt.ac.th/pr/sites/default/files/styles/panopoly_image_original/public/traasaylaksnpracchammhaawithyaalay.jpg?itok=E1W4P6Cd">
+                    <th><input type="image" name="C" value="KMUTT"  style="border-radius:50%;height:200px;width:200px;border: 8px solid #26A69A; display:block; margin: 0 auto" src="http://www.pr.kmutt.ac.th/pr/sites/default/files/styles/panopoly_image_original/public/traasaylaksnpracchammhaawithyaalay.jpg?itok=E1W4P6Cd">
                     </input></th>
                 <th><img style="border-radius:50%;height:200px;width:200px;border: 8px solid #26A69A; display:block; margin: 0 auto" src="https://bitcoin.co.th/img/bxlogo.svg">
                 </th>

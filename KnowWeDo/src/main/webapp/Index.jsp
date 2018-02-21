@@ -185,7 +185,7 @@
         <div style="margin-left:-19.5%;margin-top:0%;">
             <div style="margin-left:16.4%;" id="mmMapDiv"></div>
         </div>
-        <div class="totalCampaign">
+        <div class="totalCampaign" style="margin-top: 6%; margin-left: 15%">
             <div class="showTotalCampaignHeader">
                 <h2>Total campaign</h2>
             </div><br><br>

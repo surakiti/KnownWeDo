@@ -15,82 +15,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/style.css" type="text/css">
-    <link rel="stylesheet" href="CSS/materialize.min.css" type="text/css">
-    <link rel="stylesheet" href="CSS/materialize.css" type="text/css">
-    <link rel="stylesheet" href="CSS/stylefont.css" type="text/css">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <title>Known We Do</title>
-
-
-        <title>Parallax Template - Materialize</title>
-
-        <!-- CSS  -->
-
-    </head>
-    <body onload="initialize()" >
-        <nav  class="BGNav" role="navigation">
-            <div class="nav-wrapper container">
-                <a id="logo-container" href="#" class="colornav brand-logo" >Known We Do</a>
-
-                <div class="RightNav">
-                    <ul class="right hide-on-med-and-down">
-                        <li><a href="/">CAMPAIGN</a></li>
-                    </ul>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a href="company.jsp">COMPANY</a></li>
-                    </ul>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a href="/">HOME</a></li>
-                    </ul>
-                </div>
-
-                <ul id="nav-mobile" class="side-nav">
-                    <li><a href="/">CAMPAIGN</a></li>
-
-                </ul>
-                <ul id="nav-mobile" class="side-nav">
-                    <li><a href="company.jsp">COMPANY</a></li>        
-                </ul>
-                <ul id="nav-mobile" class="side-nav">
-                    <li><a href="/">HOME</a></li>
-
-                </ul>
-                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-            </div>
-        </nav>
-
-        <div id="index-banner" class="parallax-container">
-            <div class="section no-pad-bot">
-                <div class="container">
-                    <br><br>
-                    <h1 class="header center teal-text text-lighten-2">Volunteer</h1>
-                    <div class="row center">
-                        <h5 class="header col s12 light"></h5>
-                    </div>
-                    <div class="row center">
-                        <a href="company.jsp" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
-                    </div>
-                    <br><br>
-
-                </div>
-            </div>
-            <div class="parallax"><img src="bg1.1.jpg" alt="Unsplashed background img 1"></div>
-        </div>
-
-
-
-
-
-
-
-
-        <script
+     <script
             type="text/javascript"
             src="http://mmmap15.longdo.com/mmmap/mmmap.php?key=18b1fbbda1f980b4e368c631a3d317ea">
         </script>
@@ -100,7 +25,7 @@
 
             <%
                 LinkedHashSet<Address> linkFilterAddress = (LinkedHashSet<Address>) request.getAttribute("linkFilterAddress");
-                ArrayList<Campaign> arrayCampaign = (ArrayList<Campaign>) request.getAttribute("arrayCampaign");
+                ArrayList<Campaign> arrayCampaign = (ArrayList<Campaign>) request.getAttribute("CompanyCampaignArray");
                 boolean[] linkAddress = Address.showCampaignByProvince(linkFilterAddress);
             %>
 
@@ -171,11 +96,81 @@
             }
 
         </script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    <link rel="stylesheet" href="CSS/materialize.min.css" type="text/css">
+    <link rel="stylesheet" href="CSS/materialize.css" type="text/css">
+    <link rel="stylesheet" href="CSS/stylefont.css" type="text/css">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Known We Do</title>
 
+
+        <title>Parallax Template - Materialize</title>
+
+        <!-- CSS  -->
+
+    </head>
+    <body onload="initialize()" >
+        <nav  class="BGNav" role="navigation">
+            <div class="nav-wrapper container">
+                <a id="logo-container" href="#" class="colornav brand-logo" >Known We Do</a>
+
+                <div class="RightNav">
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="/">CAMPAIGN</a></li>
+                    </ul>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="company.jsp">COMPANY</a></li>
+                    </ul>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="/">HOME</a></li>
+                    </ul>
+                </div>
+
+                <ul id="nav-mobile" class="side-nav">
+                    <li><a href="/">CAMPAIGN</a></li>
+
+                </ul>
+                <ul id="nav-mobile" class="side-nav">
+                    <li><a href="company.jsp">COMPANY</a></li>        
+                </ul>
+                <ul id="nav-mobile" class="side-nav">
+                    <li><a href="/">HOME</a></li>
+
+                </ul>
+                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
+
+        <div id="index-banner" class="parallax-container">
+            <div class="section no-pad-bot">
+                <div class="container">
+                    <br><br>
+                    <h1 class="header center teal-text text-lighten-2">Volunteer</h1>
+                    <div class="row center">
+                        <h5 class="header col s12 light"></h5>
+                    </div>
+                    <div class="row center">
+                        <a href="company.jsp" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+                    </div>
+                    <br><br>
+
+                </div>
+            </div>
+            <div class="parallax"><img src="bg1.1.jpg" alt="Unsplashed background img 1"></div>
+        </div>
+        
         <div style="margin-left:-19.5%;margin-top:0%;">
             <div style="margin-left:16.4%;" id="mmMapDiv"></div>
         </div>
-        <div class="totalCampaign">
+         
+        <div class="totalCampaign" style="margin-top: 6%; margin-left: 15%">
+            <div class="showTotalCampaign">
+                <h3 style="text-align: center"><%=arrayCampaign.get(0).getCompany()%></h3>
+            </div><br><br>
             <div class="showTotalCampaignHeader">
                 <h2>Total campaign</h2>
             </div><br><br>
@@ -288,7 +283,7 @@
             </div>
             <div class="footer-copyright">
                 <div class="container">
-                    <span style="text-align:cen">Known We Do Company Copyright @2018</span>
+                    <span style="text-align:center">Known We Do Company Copyright @2018</span>
                 </div>
             </div>
         </footer>
