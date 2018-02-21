@@ -57,4 +57,12 @@ public class Address {
         }
         return totalAddress;
     }
+    
+    public static boolean[] showCampaignByProvince(LinkedHashSet<Address> listAddress){
+        boolean[] province = new boolean[97];
+        for (Address address : listAddress) {
+            province[address.getGeocode() / 100] = true;
+        }
+        return province;
+    }
 }

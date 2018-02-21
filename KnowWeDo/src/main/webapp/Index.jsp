@@ -102,10 +102,7 @@
             <%
                 LinkedHashSet<Address> linkFilterAddress = (LinkedHashSet<Address>) request.getAttribute("linkFilterAddress");
                 ArrayList<Campaign> arrayCampaign = (ArrayList<Campaign>)request.getAttribute("arrayCampaign");
-                boolean[] linkAddress = new boolean[87];
-                for (Address address : linkFilterAddress) {
-                    linkAddress[address.getGeocode() / 100 - 10] = true;
-                }
+                boolean[] linkAddress = Address.showCampaignByProvince(linkFilterAddress);
             %>
 
             function initialize() {
@@ -120,13 +117,13 @@
                 mmmap.hideModeSelector();
                 mmMapDiv.addEventListener("click",onclick);
             <%
-                for (int i = 0; i < linkAddress.length; i++) {
+                for (int i = 10; i < linkAddress.length; i++) {
                     if (linkAddress[i]) {
             %>
-                mmmap.showObject('<%=i + 10%>', "IG", false, null, null, "FF8000", "FF8000", 0.7, 0.5);
+                mmmap.showObject('<%=i%>', "IG", false, null, null, "FF8000", "FF8000", 0.7, 0.5);
             <%      } else {
             %>
-                mmmap.showObject('<%=i + 10%>', "IG", false, null, null, "4d4d4d", "4d4d4d", 0.7, 0.5);
+                mmmap.showObject('<%=i%>', "IG", false, null, null, "4d4d4d", "4d4d4d", 0.7, 0.5);
             <%      }
                 }
             %>
