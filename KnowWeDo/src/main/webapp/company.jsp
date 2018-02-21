@@ -68,7 +68,7 @@
                     </input></th>
                 <th><img style="border-radius:50%;height:200px;width:200px;border: 8px solid #26A69A; display:block; margin: 0 auto" src="https://bitcoin.co.th/img/bxlogo.svg">
                 </th>
-                <th ><img style="border-radius:50%;height:200px;width:200px;border: 8px solid #26A69A; display:block; margin: 0 auto" src="http://icryptonian.com/wp-content/uploads/2018/01/11222071_1335172959826799_9085657155656656807_n11111-300x300.jpg">
+                <th ><input type="image" name="C" value="BITTREX" style="border-radius:50%;height:200px;width:200px;border: 8px solid #26A69A; display:block; margin: 0 auto" src="http://icryptonian.com/wp-content/uploads/2018/01/11222071_1335172959826799_9085657155656656807_n11111-300x300.jpg">
                 </th>
                 <th ><img style="border-radius:50%;height:200px;width:200px;border: 8px solid #26A69A; display:block; margin: 0 auto" src="https://news.artnet.com/app/news-upload/2015/11/Starbucks-free-to-use-e1447954491107.jpg">
                 </th>
