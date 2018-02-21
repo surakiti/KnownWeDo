@@ -19,6 +19,7 @@ import java.util.logging.Logger;
  * @author JVVQX
  */
 public class Campaign {
+
     private long campaignId;
     private String campaignName;
     private Date startDate;
@@ -121,7 +122,6 @@ public class Campaign {
 //    public void setDonation(ArrayList<Donation> donation) {
 //        this.donation = donation;
 //    }
-
     public String getDetail() {
         return detail;
     }
@@ -145,8 +145,8 @@ public class Campaign {
     public void setImage(ArrayList<String> image) {
         this.image = image;
     }
-    
-    public static ArrayList<Campaign> getTotalCampaign(){
+
+    public static ArrayList<Campaign> getTotalCampaign() {
         Connection connectDatabase = ConnectionBuilder.getConnection();
         ArrayList<Campaign> totalCampaigns = new ArrayList<>();
         try {
@@ -154,16 +154,40 @@ public class Campaign {
             ResultSet resultDatabase = statementDatabase.executeQuery();
             while (resultDatabase.next()) {
                 Campaign campaign = new Campaign();
-                Address addressCampaign = new Address(resultDatabase.getString("Province"),resultDatabase.getString("Amphur"),resultDatabase.getInt("Geocode"));
+                Address addressCampaign = new Address(resultDatabase.getString("Province"), resultDatabase.getString("Amphur"), resultDatabase.getInt("Geocode"));
                 campaign.setCampaignId(resultDatabase.getLong("CampaignID"));
                 campaign.setCampaignName(resultDatabase.getString("CampaignName"));
                 campaign.setCampaignAddress(addressCampaign);
                 totalCampaigns.add(campaign);
             }
-        connectDatabase.close();
+            connectDatabase.close();
         } catch (SQLException ex) {
             Logger.getLogger(Word.class.getName()).log(Level.SEVERE, null, ex);
         }
         return totalCampaigns;
     }
+
+    public static ArrayList<Campaign> getTotalCompanyCampaign(String companyNametmp) {
+        Connection connectDatabase = ConnectionBuilder.getConnection();
+        ArrayList<Campaign> totalCampaigns = new ArrayList<>();
+        try {
+            PreparedStatement statementDatabase = connectDatabase.prepareStatement("SELECT * FROM Campaign c JOIN Address a ON c.AddressID = a.AddressID JOIN Company co on co.CompanyID = c.CompanyID WHERE co.CompanyName = ?");
+            statementDatabase.setString(1, companyNametmp);
+            ResultSet resultDatabase = statementDatabase.executeQuery();
+            while (resultDatabase.next()) {
+                Campaign campaign = new Campaign();
+                Address addressCampaign = new Address(resultDatabase.getString("Province"), resultDatabase.getString("Amphur"), resultDatabase.getInt("Geocode"));
+                campaign.setCampaignId(resultDatabase.getLong("CampaignID"));
+                campaign.setCampaignName(resultDatabase.getString("CampaignName"));
+                campaign.setCampaignAddress(addressCampaign);
+                campaign.setCompany(resultDatabase.getString("CompanyName"));
+                totalCampaigns.add(campaign);
+            }
+            connectDatabase.close();
+        } catch (SQLException ex) {
+            Logger.getLogger(Word.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return totalCampaigns;
+    }
+
 }
