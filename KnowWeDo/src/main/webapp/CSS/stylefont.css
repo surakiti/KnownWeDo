@@ -19,7 +19,7 @@ and open the template in the editor.
 .RightNav{
      margin-right:-15%; 
 }
-.searchCampaign{
+.totalCampaign{
     float: left;
     width: 35%;
     height: 100%;
@@ -27,6 +27,7 @@ and open the template in the editor.
     margin-top: 2%;
     margin-right: 2%;
     display: inline-block;
+    
     
 }
 #mmMapDiv{
@@ -36,9 +37,10 @@ and open the template in the editor.
 #search-button{
    margin-left: 37%;
 }
-.searchCampaign input{
-    float: left;
-}
+
 h2{
     text-align: center;
+}
+.parallax-container{
+    clear: both;
 }
