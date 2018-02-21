@@ -222,6 +222,7 @@
                     </div>
                 </div>
             </div>
+            
             <div class="parallax"><img src="bg2.jpg" alt="Unsplashed background img 2"></div>
         </div>
 
@@ -275,7 +276,7 @@
             </div>
         </div>
 
-
+        
         <div class="parallax-container valign-wrapper">
             <div class="section no-pad-bot">
                 <div class="container">
